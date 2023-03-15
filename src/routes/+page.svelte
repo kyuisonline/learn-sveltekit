@@ -10,8 +10,7 @@
 </svelte:head>
 
 <header class="m-auto my-12 max-w-[65ch]">
-	<h1 class="text-4xl">Learn SvelteKit</h1>
-	<p>Documenting what's possible with SvelteKit.</p>
+	<h1 class="text-4xl">learnsveltekit</h1>
 </header>
 <section class="m-auto max-w-[65ch]">
 	<ul class="space-y-2">

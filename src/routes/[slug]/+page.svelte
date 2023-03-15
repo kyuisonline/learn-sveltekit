@@ -12,7 +12,7 @@
 	<meta name="description" content={metadata.description} />
 </svelte:head>
 
-<article class="prose m-auto my-12">
+<article class="prose prose-neutral dark:prose-invert m-auto my-12">
 	<a href="/" class="my-2 block text-sm font-normal">Back home</a>
 	<Body />
 </article>
