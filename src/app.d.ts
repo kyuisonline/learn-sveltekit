@@ -7,6 +7,12 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+
+	interface Post {
+		title: string;
+		slug: string;
+		description: string;
+	}
 }
 
 export {};

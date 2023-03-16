@@ -1,13 +1,15 @@
 import { redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-export const load = (async ({ params }) => {
+export const load = (async ({ params, parent, url }) => {
+	const { metadata } = await parent();
+
 	try {
 		const post = await import(`../[slug]/posts/${params.slug}.md`);
 
 		return {
 			body: post.default,
-			metadata: post.metadata
+			metadata: { page: { ...post.metadata, url: url.href }, site: metadata.site }
 		};
 	} catch (error) {
 		throw redirect(303, '/');

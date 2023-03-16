@@ -1,13 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import Head from '$lib/Head.svelte';
 
 	export let data: PageData;
 </script>
 
-<svelte:head>
-	<title>Learn SvelteKit</title>
-	<meta name="description" content="Documenting what's possible with SvelteKit." />
-</svelte:head>
+<Head page={data.metadata.page} site={data.metadata.site} />
 
 <header class="m-auto my-12 max-w-[65ch]">
 	<h1 class="text-4xl">learnsveltekit</h1>

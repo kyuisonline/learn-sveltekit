@@ -1,13 +1,18 @@
 import type { PageLoad } from './$types';
 
-interface Post {
-	title: string;
-	slug: string;
-	description: string;
-}
+export const load = (async ({ parent, url }) => {
+	const { metadata } = await parent();
 
-export const load = (async () => {
-	return { posts: (await getPosts()) as Post[] };
+	return {
+		posts: (await getPosts()) as Post[],
+		metadata: {
+			...metadata,
+			page: {
+				title: 'Home',
+				url: url.href
+			}
+		}
+	};
 }) satisfies PageLoad;
 
 async function getPosts() {
