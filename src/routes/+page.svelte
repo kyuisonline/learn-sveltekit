@@ -13,7 +13,11 @@
 <section class="m-auto max-w-[65ch]">
 	<ul class="space-y-2">
 		{#each data.posts as { title, slug }}
-			<li><a href={slug} class="underline">{title}</a></li>
+			<li>
+				<a href={slug} class="block p-6 underline hover:bg-neutral-200 dark:hover:bg-neutral-800 "
+					>{title}</a
+				>
+			</li>
 		{/each}
 	</ul>
 </section>
