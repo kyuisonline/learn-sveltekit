@@ -56,6 +56,16 @@ pre[class*='language-'] {
 	padding: 1em;
 	margin: 0.5em 0;
 	overflow: auto;
+	border-radius: 0;
+}
+
+pre[class*='language-']::-webkit-scrollbar {
+	height: 0.5rem;
+	background-color: #011627;
+}
+
+pre[class*='language-']::-webkit-scrollbar-thumb {
+	background-color: #34d399;
 }
 
 :not(pre) > code[class*='language-'],
@@ -124,7 +134,7 @@ pre[class*='language-'] {
 
 .token.attr-name,
 .token.inserted {
-	color: rgb(173, 219, 103);
+	color: #34d399;
 	font-style: italic;
 }
 
@@ -133,7 +143,7 @@ pre[class*='language-'] {
 .token.entity,
 .language-css .token.string,
 .style .token.string {
-	color: rgb(173, 219, 103);
+	color: #34d399;
 }
 
 .token.class-name,

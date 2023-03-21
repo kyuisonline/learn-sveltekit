@@ -10,7 +10,8 @@
 
 <Head page={data.metadata.page} site={data.metadata.site} />
 
+<a href="/" class="my-2 block text-sm font-normal">&larr; Back home</a>
 <article class="prose prose-neutral m-auto my-12 dark:prose-invert">
-	<a href="/" class="my-2 block text-sm font-normal">Back home</a>
 	<Body />
 </article>
+<a href="/" class="my-2 block text-sm font-normal">&larr; Back home</a>
