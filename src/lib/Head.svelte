@@ -37,11 +37,11 @@
 	<meta property="og:type" content={page.type || site.type} />
 
 	<!-- Twitter -->
-	<meta property="twitter:title" content={title} />
-	<meta property="twitter:description" content={page.description || site.description} />
-	<meta property="twitter:card" content={site.twitter_card} />
-	<meta property="twitter:image" content={page.image_src || site.image_src} />
-	<meta property="twitter:image:alt" content={page.image_alt || site.image_alt} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={page.description || site.description} />
+	<meta name="twitter:card" content={site.twitter_card} />
+	<meta name="twitter:image" content={page.image_src || site.image_src} />
+	<meta name="twitter:image:alt" content={page.image_alt || site.image_alt} />
 	<meta name="twitter:site" content={'@' + site.twitter_handle} />
 
 	<slot />

@@ -28,7 +28,7 @@ export const site = readable({
 	title: 'Learn SvelteKit',
 	description: 'Articles, tutorials, and updates revolving around the SvelteKit framework.',
 	url: import.meta.env.VITE_CLIENT_URL,
-	image_src: `${import.meta.env.VITE_CLIENT_URL}/card-1440x720.png`,
+	image_src: `${import.meta.env.VITE_CLIENT_URL}/banner-1440x720.png`,
 	image_alt: 'Banner logo.',
 	twitter_card: 'summary',
 	twitter_handle: 'kyleulman',

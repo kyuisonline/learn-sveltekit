@@ -1,7 +1,5 @@
 import type { PageLoad } from './$types';
 
-export const prerender = true;
-
 export const load = (async ({ parent, url }) => {
 	const { metadata } = await parent();
 
