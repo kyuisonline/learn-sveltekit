@@ -1,11 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import Head from '$lib/Head.svelte';
 
 	export let data: PageData;
 </script>
-
-<Head page={data.metadata.page} site={data.metadata.site} />
 
 <header>
 	<h1 class="text-4xl text-emerald-600 dark:text-emerald-400">
