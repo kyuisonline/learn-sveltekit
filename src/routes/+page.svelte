@@ -6,12 +6,12 @@
 
 <header>
 	<h1 class="text-4xl text-emerald-600 dark:text-emerald-400">
-		learn<span class="text-emerald-600 dark:text-emerald-400">svelte</span>kit
+		{data.content.home.title}
 	</h1>
 </header>
 <section>
 	<ul class="space-y-1">
-		{#each data.posts as { title, slug }}
+		{#each data.content.posts as { title, slug }}
 			<li>
 				<a
 					href={slug}

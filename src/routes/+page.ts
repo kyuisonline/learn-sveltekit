@@ -1,5 +1,6 @@
 import type { PageMetadata } from '@kyleulman/lib';
 import type { PageLoad } from './$types';
+import { content } from '../content';
 
 export const load = (async ({ url }) => {
 	const page: PageMetadata = {
@@ -10,7 +11,10 @@ export const load = (async ({ url }) => {
 
 	return {
 		page: page,
-		posts: (await getPosts()) as Post[]
+		content: {
+			home: content.home,
+			posts: (await getPosts()) as Post[]
+		}
 	};
 }) satisfies PageLoad;
 
