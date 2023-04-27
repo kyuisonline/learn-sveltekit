@@ -122,7 +122,10 @@ If everything is wired up correctly, you should see an immediate change to your 
 ```html
 <!-- src/routes/+page.svelte -->
 <h1 class="text-red-500">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p>
+	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the
+	documentation
+</p>
 ```
 
 Tailwind CSS is a powerful tool, and there's so much more to learn that is outside the scope of this blog. To get the most out of Tailwind, please [give their official docs a read-through](https://tailwindcss.com/docs/utility-first). It's some of the best documentation I've encountered.

@@ -1,30 +1,17 @@
 {
 	"short_name": "Learn SvelteKit",
 	"name": "Learn SvelteKit PWA",
+	"description": "Documenting what's possible with SvelteKit.",
 	"icons": [
 		{
-			"src": "/icon-512.png",
+			"src": "/images/icon-512.png",
 			"type": "image/png",
-			"sizes": "512x512",
-			"purpose": "any"
+			"sizes": "512x512"
 		},
 		{
-			"src": "/icon-192.png",
+			"src": "/images/icon-192.png",
 			"type": "image/png",
-			"sizes": "192x192",
-			"purpose": "any"
-		},
-		{
-			"src": "/icon-512-round.png",
-			"type": "image/png",
-			"sizes": "512x512",
-			"purpose": "maskable"
-		},
-		{
-			"src": "/icon-192-round.png",
-			"type": "image/png",
-			"sizes": "192x192",
-			"purpose": "maskable"
+			"sizes": "192x192"
 		}
 	],
 	"id": "/?source=pwa",
@@ -33,5 +20,5 @@
 	"background_color": "#171717",
 	"theme_color": "#34D399",
 	"display": "standalone",
-	"description": "Documenting what's possible with SvelteKit."
+	"orientation": "portrait"
 }

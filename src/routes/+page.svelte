@@ -6,12 +6,12 @@
 
 <header>
 	<h1 class="text-4xl text-emerald-600 dark:text-emerald-400">
-		{data.content.home.title}
+		{data.content.header.title}
 	</h1>
 </header>
 <section>
 	<ul class="space-y-1">
-		{#each data.content.posts as { title, slug }}
+		{#each data.posts as { title, slug }}
 			<li>
 				<a
 					href={slug}

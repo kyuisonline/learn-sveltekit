@@ -113,7 +113,10 @@ Descriptions give context to the title and provide a summary of page content. Pa
 ```svelte
 <!-- Description -->
 <meta name="description" content={page.description || $site.description} />
-<meta property="og:description" content={page.description || $site.description} />
+<meta
+	property="og:description"
+	content={page.description || $site.description}
+/>
 ```
 
 ### `og:image` & `og:image:alt`

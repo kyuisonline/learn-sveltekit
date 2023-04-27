@@ -1,20 +1,19 @@
-import type { PageMetadata } from '@kyleulman/lib';
 import type { PageLoad } from './$types';
-import { content } from '../content';
+
+interface Post {
+	title: string;
+	slug: string;
+	description: string;
+}
 
 export const load = (async ({ url }) => {
-	const page: PageMetadata = {
-		title: 'Home',
-		description: `Documenting what's possible with SvelteKit.`,
-		url: url.href
-	};
+	const page = await import('./content');
+
+	page.home.metadata.url = url.href;
 
 	return {
-		page: page,
-		content: {
-			home: content.home,
-			posts: (await getPosts()) as Post[]
-		}
+		content: page.home,
+		posts: (await getPosts()) as Post[]
 	};
 }) satisfies PageLoad;
 

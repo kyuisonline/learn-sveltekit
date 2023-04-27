@@ -1,10 +1,8 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-	plugins: [require('@tailwindcss/typography')],
-
 	theme: {
 		extend: {
 			fontFamily: {
@@ -49,5 +47,6 @@ module.exports = {
 				}
 			})
 		}
-	}
+	},
+	plugins: [require('@tailwindcss/typography')]
 };

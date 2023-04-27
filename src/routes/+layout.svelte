@@ -1,16 +1,18 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Head } from '@kyleulman/lib';
+	import { Head, Footer } from '@kyleulman/workbench';
 	import '../app.css';
+	import type { LayoutData } from './$types';
 
-	export let data;
+	export let data: LayoutData;
 </script>
 
-{#key $page.data.page}
-	<Head page={$page.data.page} site={data.site} />
+{#key $page}
+	<Head page={$page.data.content.metadata} shared={data.shared} />
 {/key}
 
 <main class="my-12 flex-1 space-y-12">
 	<slot />
 </main>
-<footer class="my-6 text-center">&copy; {new Date().getFullYear()} Ulman Digital</footer>
+
+<Footer content={{ copyright: 'Kyle Ulman' }} />

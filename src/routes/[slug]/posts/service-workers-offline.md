@@ -89,7 +89,8 @@ First, conduct a series of checks to allow only specified resources to be cached
 ```javascript
 // ...
 
-if (event.request.method !== 'GET' || event.request.headers.has('range')) return;
+if (event.request.method !== 'GET' || event.request.headers.has('range'))
+	return;
 
 // ...
 ```
@@ -113,9 +114,11 @@ function checks(event) {
 
 	const isHttp = url.protocol.startsWith('http');
 
-	const isLocal = url.hostname === self.location.hostname && url.port === self.location.port;
+	const isLocal =
+		url.hostname === self.location.hostname && url.port === self.location.port;
 
-	const isStaticAsset = url.host === self.location.host && cachePayloadSet.has(url.pathname);
+	const isStaticAsset =
+		url.host === self.location.host && cachePayloadSet.has(url.pathname);
 
 	const isUncached = event.request.cache === 'only-if-cached' && !isStaticAsset;
 

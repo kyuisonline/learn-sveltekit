@@ -1,18 +1,17 @@
-import type { PageMetadata } from '@kyleulman/lib';
 import { redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load = (async ({ params, url }) => {
 	try {
+		const page = await import('./content');
 		const post = await import(`../[slug]/posts/${params.slug}.md`);
-		const page: PageMetadata = {
-			title: post.metadata.title,
-			description: post.metadata.description,
-			url: url.href
-		};
+
+		page.post.metadata.url = url.href;
+		page.post.metadata.title = post.metadata.title;
+		page.post.metadata.description = post.metadata.description;
 
 		return {
-			page: page,
+			content: page.post,
 			body: post.default
 		};
 	} catch (error) {
