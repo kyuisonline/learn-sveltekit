@@ -5,15 +5,15 @@ export const sharedMetadata: SharedMetadata = {
 	type: 'website',
 	robots: 'all',
 	image: {
-		src: 'https://www.learnsveltekit.com',
+		src: 'https://res.cloudinary.com/kyuisonline/image/upload/v1682722187/learn-sveltekit/card-720-png.png',
 		alt: 'Learn SvelteKit logo.',
-		width: '1440',
+		width: '720',
 		height: '720'
 	},
 	twitter: {
-		card: 'summary_large_image',
-		site: 'kyleulman',
-		creator: 'kyleulman'
+		card: 'summary',
+		site: 'kyuisonline',
+		creator: 'kyuisonline'
 	}
 };
 
