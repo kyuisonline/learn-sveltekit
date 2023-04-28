@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Head, Footer } from '@kyleulman/workbench';
+	import { Head, Footer } from '@kyuisonline/workbench';
 	import '../app.css';
 	import type { LayoutData } from './$types';
 

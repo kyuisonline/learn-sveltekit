@@ -1,4 +1,4 @@
-import type { PageMetadata, SharedMetadata } from '@kyleulman/workbench';
+import type { PageMetadata, SharedMetadata } from '@kyuisonline/workbench';
 
 export const sharedMetadata: SharedMetadata = {
 	title: 'Learn SvelteKit',

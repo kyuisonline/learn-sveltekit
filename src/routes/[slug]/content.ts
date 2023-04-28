@@ -1,4 +1,4 @@
-import type { PageMetadata } from '@kyleulman/workbench';
+import type { PageMetadata } from '@kyuisonline/workbench';
 
 export const post: { metadata: PageMetadata } = {
 	metadata: {
