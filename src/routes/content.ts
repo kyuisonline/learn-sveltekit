@@ -5,7 +5,7 @@ export const sharedMetadata: SharedMetadata = {
 	type: 'website',
 	robots: 'all',
 	image: {
-		src: 'https://res.cloudinary.com/kyuisonline/image/upload/v1682722187/learn-sveltekit/card-720-png.png',
+		src: 'https://res.cloudinary.com/kyuisonline/image/upload/v1682724100/learn-sveltekit/card-720-png.png',
 		alt: 'Learn SvelteKit logo.',
 		width: '720',
 		height: '720'
