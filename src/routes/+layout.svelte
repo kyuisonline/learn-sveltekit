@@ -5,6 +5,8 @@
 	import type { LayoutData } from './$types';
 
 	export let data: LayoutData;
+
+	const copyright = `<a href="https://www.kyu.is" class="text-emerald-400 underline">Kyu is Online</a>`;
 </script>
 
 {#key $page}
@@ -15,4 +17,4 @@
 	<slot />
 </main>
 
-<Footer content={{ copyright: 'Kyu is Online' }} />
+<Footer content={{ copyright }} />
