@@ -24,6 +24,6 @@ export const home: { metadata: PageMetadata; header: { title: string } } = {
 		url: ''
 	},
 	header: {
-		title: 'learnsveltekit'
+		title: 'Learn SvelteKit'
 	}
 };

@@ -15,4 +15,4 @@
 	<slot />
 </main>
 
-<Footer content={{ copyright: 'Kyle Ulman' }} />
+<Footer content={{ copyright: 'Kyu is Online' }} />
